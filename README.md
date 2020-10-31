@@ -8,7 +8,7 @@ More details of this work can be found in [here](http://dcase.community/document
 
 # How to Use
 
-If you just want to try my found best CNN architectures, check "Model_A.py" and "Model_B.py".
+If you just want to try my found best CNN architectures, you may use "Model_A.py" and "Model_B.py" directly.
 
 If you want to search for good CNN architecture by yourself, there are 2 steps: 
 
