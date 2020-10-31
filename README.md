@@ -2,7 +2,7 @@
 
 This repository includes the source code of my submitted Acoustic Scene Classification (ASC) system to Task 1B of the DCASE challenge 2020. The code is based on Python 3.5 and uses PyTorch 1.0.0.
 
-The submitted system used a CNN architecture that is found by random search in a predefined search space. The architectures in the search space have 2~4 convolutional blocks. Each block contains 1~2 efficient convolutional modules and a max/average pooling layer. The possible choices of convolutional modules include depth-wise separable convolution (DSC) module and inverted residual with linear bottleneck module. The possible kernel size for a convolutional module can be 3x3 or 5x5. Thus, the random sampled architectures from the search space should have different receptive field, depth (number of layers) and width (number of kernels in each convolutional module).
+The submitted system used a CNN architecture that is found by random search in a predefined search space. The architectures in the search space have 2-4 convolutional blocks. Each block contains 1-2 efficient convolutional modules and a max/average pooling layer. The possible choices of convolutional modules include depth-wise separable convolution (DSC) module and inverted residual with linear bottleneck module. The possible kernel size for a convolutional module can be 3x3 or 5x5. Thus, the random sampled architectures from the search space should have different receptive field, depth (number of layers) and width (number of kernels in each convolutional module).
 
 
 
