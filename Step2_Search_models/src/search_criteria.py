@@ -27,11 +27,11 @@ def sample_a_CNN(trained_model_ids=[]):
 			block_arc.append(np.random.randint(5,7)) # layer_type 5 and 6 are pooling layers.
 			nn_blocks_arc.append(block_arc)
 
-		# The initial filter size (from 8~256)
-		filter_size = 8 * np.random.randint(1,33)
+		# The initial filter size (from 4~128)
+		filter_size = 4 * np.random.randint(1,33)
 		# The growth of n_filters after each block
-		filter_growth_coefs = [0.5,0.75,1.0,1.25,1.5,1.75,2.0]
-		filter_growth_index = np.random.randint(0,7)
+		filter_growth_coefs = [1.0,1.25,1.5,1.75,2.0]
+		filter_growth_index = np.random.randint(0,5)
 		filter_growth_coef = filter_growth_coefs[filter_growth_index]
 		model = CNN_Candidate(nn_blocks_arc, filter_size, filter_growth_coef)
 
