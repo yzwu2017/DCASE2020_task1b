@@ -58,7 +58,7 @@ python extr-asc.py
 
 The codes are in the "Step2_Search_models" folder. 
 
-Before running the script, check and modify the configurations in "fast_train.py":
+Before running the script, check and modify the configurations in "fast_train.py" (e.g., modify the paths to the feature folder and label file):
 
 ```python
 #===============================
