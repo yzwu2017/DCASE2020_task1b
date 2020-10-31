@@ -8,15 +8,17 @@ More details of this work can be found in [here](http://dcase.community/document
 
 # How to Use
 
-There are two steps to run the system. 
+If you just want to try my found best CNN architectures, check "Model_A.py" and "Model_B.py".
+
+If you want to search for good CNN architecture by yourself, there are 2 steps: 
 
 1. Feature extraction, i.e., extract the average-difference time-frequency representation from the binaural audio waveforms. The CNNs will be trained with these extracted features.
 2. Model searching. Repeatedly sampling model architectures from the search space, train and fast evaluate the sampled architecture, and save its accuracy in development dataset for further analysis.
 
 The evaluated models will be recorded in the csv file "found_models_list.csv" for further analysis.
 
-
 ## Pre-requisite:
+
 The code is based on Python 3.5 and uses PyTorch 1.0.0. The libraries' versions for running the code are listed below. However, the code should be able to run with libraries of newer versions. 
 
 - numpy.__version__=='1.14.0'
@@ -45,7 +47,9 @@ config = { ...
 	...
 	}
 ```
+
 Then run the script by
+
 ```python
 python extr-asc.py
 ```
@@ -65,6 +69,7 @@ Before running the script, check and modify the configurations in "fast_train.py
 					...
 				} 
 ```
+
 Then run the script "run.sh".
 
 The evaluated models will be recorded in this csv file: "found_models\found_models_list.csv".
